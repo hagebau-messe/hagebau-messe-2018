@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <title>Info</title>
+	<style>
+  	.image {
+	    width: 100%;
+	    height: auto;
+	    vertical-align: middle;
+  	}
+
+  	p {
+  		font-size: 14px;
+  	}
+
+    body {
+      font-family: Sans-serif, Arial, Helvetica;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+
+    .tabs-content {
+      padding: 5px;
+    }
+
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: green;
+        color: white;
+    }
+
+    table {
+      border: none;
+      font-size: 14px;
+      width: 100%;
+    }
+
+  </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a id="nav_title" class="navbar-brand" href="#">Anreise / Öffnungszeiten</a>
+      <button id="menubutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li id="tab1Button" class="nav-item active">
+            <a class="nav-link" href="#">Anreise / Öffnungszeiten</a>
+          </li>
+          <li id="tab2Button" class="nav-item">
+            <a class="nav-link" href="#">Messe-Organisation & Hotel</a>
+          </li>
+          <li id="tab3Button" class="nav-item">
+            <a class="nav-link" href="#">WLAN</a>
+          </li>
+          <li id="tab4Button" class="nav-item">
+            <a class="nav-link" href="#">Messe-Broschüre</a>
+          </li>
+          <li id="tab5Button" class="nav-item">
+            <a class="nav-link" href="#">Impressum / Datenschutz</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="tabs-content">
+      <div id="tab1" style="display:block;">
+        <h2>
+          Adresse für Ihr Navigationssystem
+        </h2>
+        <p>
+          Deutz-Mühlheimer-Str. 111<br />
+          50679 Köln
+        </p>
+        <h2>
+          Öffnungszeiten Messe
+        </h2>
+        <p>
+          Halle 6<br />
+          07.02.2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09:00 - 18:00 Uhr<br />
+          08.02.2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09:00 - 17:00 Uhr<br />
+        </p>
+        <p>
+          Halle 9<br />
+          07.02.2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Einlass ab 18:00 Uhr<br />
+        </p>
+        <img class="image" src="info/map.jpg">
+      </div>
+      <div id="tab2" style="display:none;">
+        <h2>hagebau Messe-Team</h2>
+        <table cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50%" class="second">Christian Schneiders</td>
+            <td width="50%" class="second">00495191-8023945</td>
+          </tr>
+          <tr>
+            <td width="50%" class="second">Nicole Schröder</td>
+            <td width="50%" class="second">00495191-802717</td>
+          </tr>
+          <tr>
+            <td width="50%" class="second">Manuela Böttger</td>
+            <td width="50%" class="second">00495191-802218</td>
+          </tr>
+        </table>
+        <br />
+        <h2>Hotelbuchung</h2>
+        <table cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50%" class="second">Sharon Smirke</td>
+            <td width="50%" class="second">00495191-802190</td>
+          </tr>
+          <tr>
+            <td width="50%" class="second">Jens Schiefelbein</td>
+            <td width="50%" class="second">00495191-802622</td>
+          </tr>
+        </table>
+        <br />
+        <h2>Köln Messe</h2>
+        <table cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50%" class="second">Information</td>
+            <td width="50%" class="second">0049221-8210</td>
+          </tr>
+        </table>
+      </div>
+      <div id="tab3" style="display:none;">
+        <p>
+          Auf unserer Messe können Sie ihre mobilen End-Geräte mit unserem Messe-WLAN verbinden und dieses kostenlos nutzen.
+        </p>
+        <h2>Netzwerknamen</h2>
+        <p>
+hagebau Besucher<br />
+hagebau Lieferanten
+        </p>
+        <h2>Passwort</h2>
+        <p>
+hagebaumesse
+        </p>
+      </div>
+      <div id="tab4" style="display:none;">
+        <p>
+Unsere steht im hagebau Extranet zum Download zur Verfügung oder kann gerne jederzeit angefordert werden unter:<br /><br />
+isabel.ladeur@hagebau.com <br /><br />
+Bitte schreiben Sie uns eine Email und nennen Sie uns Ihre Kontaktdaten. Im Nachgang der Messe überstellen wir Ihnen sehr gerne das angeforderte Dokument.
+        </p>
+      </div>
+      <div id="tab5" style="display:none;">
+        <img class="image" src="info/logo.jpg">
+        <p>
+          hagebau<br />
+          Handelsgesellschaft für Baustoffe mbh &amp; Co. KG<br />
+           Celler Straße 47, 29614 Soltau <br />
+          Telefon: +49 5191 802 - 0<br />
+          Telefax: +49 5191 98664 - 28<br />
+          E-Mail: internet@hagebau.com<br />
+        </p>
+        <p>
+          Kommanditgesellschaft mit Sitz in Soltau<br />
+          Amtsgericht Lüneburg HRA 100617<br />
+          Umsatzsteuer-Identifikationsnummer gemäß $ 27a<br />
+          UStG: DE116 373 838<br />
+        </p>
+        <p>
+          Komplementärin: hagebau Handelsgesellschaft  für Baustoffe Verwaltungs-GmbH mit Sitz in Soltau<br />
+          Amtsgericht Lüneburg HRB 101291 <br />
+          Geschäftsführer: Jan Buck-Emden (Vorsitzender), Hartmut Goldboom, Sven Grobrügge, Kai Kächelein, Torsten Kreft <br /> Aufsichtsratsvorsitzender: Johannes M. Schuller, Ingolstadt<br />
+        </p>
+        <h2>Rechtliche Hinweise</h2>
+        <p>
+          Dienste-Anbieter der über diese App angebotenen Services und Informationen im Sinne des Telemediengesetzes (TMG) ist - soweit innerhalb dieser Rechtlichen Hinweise und/ oder der App nicht anders angegeben - die hagebau Handelsgesellschaft für Baustoffe mbH & Co. KG. Wir übernehmen keine Gewährleistung, Haftung oder Garantie für die Aktualität, Richtigkeit und Vollständigkeit der über diese App kostenfrei zur Verfügung gestellten Services und Informationen.
+          Dies gilt auch für fremde Inhalte (z.B. auf verlinkten Websites), für die wir nicht verantwortlich sind und die wir uns auch nicht zu Eigen machen. Wir übernehmen insoweit keine Haftung für die Vollständigkeit, für die Fehlerfreiheit, die Verfügbarkeit und/ oder die Qualität solcher fremden Inhalte. Die fremden Inhalte werden von uns weder überwacht noch auf ihre Aktualität und Richtigkeit hin überprüft.
+          Die Verwendung der innerhalb dieser App verfügbaren Daten, Informationen und Inhalte (inkl. Fotos) - einschließlich ihrer Vervielfältigung, Weitergabe, Bearbeitung und/oder Veröffentlichung - ist untersagt, es sei denn, wir (oder der jeweilige Rechteinhaber) haben einer solchen Verwendung vorher ausdrücklich schriftlich zugestimmt. Entsprechendes gilt für Kontaktdaten anderer Nutzer, die insbesondere nicht zu Werbezwecken missbraucht werden dürfen.
+        </p>
+        <h2>Datenschutzhinweise</h2>
+        <p>
+          Als Dienste-Anbieter sind wir auch verantwortliche Stelle für die bei der Nutzung unserer App erhobenen und verarbeiteten personenbezogenen Daten der Nutzer. Personenbezogene Daten sind Informationen über persönliche oder sachliche Verhältnisse einer bestimmten oder bestimmbaren Person. Dazu gehören etwa Angaben wie Name, Telefonnummer, Post- und E-Mail-Adresse etc. Solche Daten werden von uns nach den einschlägigen gesetzlichen Bestimmungen insbesondere des Bundesdatenschutzgesetzes (BDSG) und des Telemediengesetzes (TMG) erhoben und genutzt.<br />
+          Unsere App ist modular aufgebaut. Einzelne Module und Funktionen innerhalb unserer App werden von externen Dienste-Anbietern bereitgestellt und betrieben, so dass wir auf die insoweit erfolgende Erhebung und Verarbeitung von Daten nur begrenzten Einfluss haben.<br />
+          Im übrigen gilt zum Datenschutz allgemein folgendes:<br />
+          Eine Übermittlung Ihrer Daten an Dritte findet nicht statt, es sei denn, wir sind gesetzlich dazu verpflichtet oder es liegt ein gesetzlicher Erlaubnistatbestand bzw. eine Einwilligung vor. Soweit externe Dienstleister Zugriff auf Ihre personenbezogenen Daten haben, stellen wir durch rechtliche, technische und organisatorische Maßnahmen (insbesondere den Abschluss entsprechender Datenschutzvereinbarungen) sicher, dass diese die Vorschriften der einschlägigen Datenschutzgesetze einhalten und Ihre Daten nur entsprechend unserer Weisungen verarbeiten.<br />
+          Gerne geben wir Ihnen Auskunft darüber, ob und welche personenbezogenen Daten von Ihnen bei uns gespeichert sind. Unter den Voraussetzungen der Bestimmungen des BDSG steht Ihnen darüber hinaus ein Recht auf Berichtigung, Sperrung oder Löschung Ihrer Daten zu. Bitte wenden Sie sich zu diesem Zweck ggf. an datenschutz@hagebau.com<br/>
+          Diese App nutzt fabric.io Crashlytics für mobile Apps. Crashlytics sammelt Daten zur App-Verwendung speziell in Bezug auf Systemabstürze und Fehler. Dabei werden Informationen zum Gerät, zu der App-Version, die installiert ist, sowie andere Informationen verwendet, die helfen können, Fehler zu beheben, vor allem in Bezug auf die Soft- und Hardware des Nutzers. Nähere Informationen zum Datenschutz im Rahmen von fabric.io Crashlytics finden Sie unter https://try.crashlytics.com/terms/privacy-policy.pdf.<br/>
+          Diese App verwendet das Firebase SDK, um den App-Benutzern Benachrichtigungen auszuspielen. Firebase ist eine Google-Tochter und hat seinen Sitz in San Francisco (CA), USA. Die Datenschutzerklärung von Firebase finden Sie unter https://www.firebase.com/terms/privacy-policy.html<br/>
+        </p>
+        <h2>Technische Realisierung</h2>
+        <p>
+          novomind AG<br />
+          Bramfelder Chaussee 45<br />
+          22177 Hamburg<br />
+          Telefon: +49 40 808071 0<br />
+          Fax: +49 40 808071 100<br />
+          E-Mail: info@novomind.com<br />
+        </p>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        $("#tab1Button").click(function(){
+          $("#menubutton").trigger("click");
+          document.getElementById("nav_title").text = "Anreise / Öffnungszeiten";
+          $("#tab1Button").removeClass("active");
+          $("#tab2Button").removeClass("active");
+          $("#tab3Button").removeClass("active");
+          $("#tab4Button").removeClass("active");
+          $("#tab5Button").removeClass("active");
+          $(this).addClass("active");
+          $("#tab1").show();
+          $("#tab2").hide();
+          $("#tab3").hide();
+          $("#tab4").hide();
+          $("#tab5").hide();
+        });
+        $("#tab2Button").click(function(){
+          $("#menubutton").trigger("click");
+          document.getElementById("nav_title").text = "Messe-Organisation & Hotel";
+          $("#tab1Button").removeClass("active");
+          $("#tab2Button").removeClass("active");
+          $("#tab3Button").removeClass("active");
+          $("#tab4Button").removeClass("active");
+          $("#tab5Button").removeClass("active");
+          $(this).addClass("active");
+          $("#tab1").hide();
+          $("#tab2").show();
+          $("#tab4").hide();
+          $("#tab3").hide();
+          $("#tab5").hide();
+        });
+        $("#tab3Button").click(function(){
+          $("#menubutton").trigger("click");
+          document.getElementById("nav_title").text = "WLAN";
+          $("#tab1Button").removeClass("active");
+          $("#tab2Button").removeClass("active");
+          $("#tab3Button").removeClass("active");
+          $("#tab4Button").removeClass("active");
+          $("#tab5Button").removeClass("active");
+          $(this).addClass("active");
+          $("#tab1").hide();
+          $("#tab2").hide();
+          $("#tab4").hide();
+          $("#tab3").show();
+          $("#tab5").hide();
+        });
+        $("#tab4Button").click(function(){
+          $("#menubutton").trigger("click");
+          document.getElementById("nav_title").text = "Messe-Broschüre";
+          $("#tab1Button").removeClass("active");
+          $("#tab2Button").removeClass("active");
+          $("#tab3Button").removeClass("active");
+          $("#tab4Button").removeClass("active");
+          $("#tab5Button").removeClass("active");
+          $(this).addClass("active");
+          $("#tab1").hide();
+          $("#tab2").hide();
+          $("#tab3").hide();
+          $("#tab4").show();
+          $("#tab5").hide();
+        });
+        $("#tab5Button").click(function(){
+          $("#menubutton").trigger("click");
+          document.getElementById("nav_title").text = "Impressum / Dateschutz";
+          $("#tab1Button").removeClass("active");
+          $("#tab2Button").removeClass("active");
+          $("#tab3Button").removeClass("active");
+          $("#tab4Button").removeClass("active");
+          $("#tab5Button").removeClass("active");
+          $(this).addClass("active");
+          $("#tab1").hide();
+          $("#tab2").hide();
+          $("#tab3").hide();
+          $("#tab4").hide();
+          $("#tab5").show();
+        });
+      })
+    </script>
+  </body>
+</html>
