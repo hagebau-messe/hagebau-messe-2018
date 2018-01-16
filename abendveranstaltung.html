@@ -1,29 +1,258 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="utf-8" />
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
-    <title>Abendveranstaltung</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <title>Abendveranstaltung</title>
 	<style>
-	.image {
+  	.image {
 	    width: 100%;
 	    height: auto;
 	    vertical-align: middle;
-	}
+  	}
 
-	p {
-		font-size: 14px;
-		font-family: Sans-serif;
-	}
-    </style>
+  	p {
+  		font-size: 14px;
+  	}
+
+    body {
+      font-family: Sans-serif, Arial, Helvetica;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+
+    .tabs-content {
+      padding: 5px;
+    }
+
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: green;
+        color: white;
+    }
+  </style>
   </head>
   <body>
-  		<h1 style="text-align:center; font-family: Sans-serif;">Leistung trifft Leidenschaft – ohne Limit.</h1>
-  		<img class="image" src="abendveranstaltung/teaser1.jpg">
-  		<p>Nach einem abwechslungsreichen und informativen Messetag laden wir Sie ganz herzlich zu unserer großen Abendshow ein.</p>
-  		<p>Erleben Sie die beste Art der Unterhaltung, kulinarisch und künstlerisch! Vor der Show erwartet Sie ein erstklassiges Buffet von unserem Caterer Stolzenhoff. Die TV-Moderatorin Anna Kraft wird Sie mit Charme und Witz durch den Abend führen.</p>
-  		<p>Seien Sie bei der unvergesslichen Flic Flac-Show dabei. Internationale Akrobatik und Artistik, gewürzt mit einem kräftigen Schuss Comedy werden Sie zum Staunen bringen.</p>
-  		<p>Anschließend bietet die Aftershow-Party einen Rahmen für gemeinsame Gespräche und die eine oder andere Tanzeinlage.</p>
-  		<p>Wir freuen uns darauf, Sie am Mittwoch, dem 7. Februar, ab 18 Uhr in der Messehalle 9 zu begrüßen.</p>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a id="nav_title" class="navbar-brand" href="#">Abendveranstaltung</a>
+      <button id="menubutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li id="tab1Button" class="nav-item active">
+            <a class="nav-link" href="#">Abendveranstaltung</a>
+          </li>
+          <li id="tab2Button" class="nav-item">
+            <a class="nav-link" href="#">Organisatorisches</a>
+          </li>
+          <li id="tab3Button" class="nav-item">
+            <a class="nav-link" href="#">Menü</a>
+          </li>
+          <li id="tab4Button" class="nav-item">
+            <a class="nav-link" href="#">Show-Programm</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="tabs-content">
+      <div id="tab1" style="display:block;">
+        <p>Als Highlight nach einem abwechslungsreichen und informativen ersten Messetag laden wir Sie ganz herzlich zu unserer großen Abendshow ein. </p>
+        <img class="image" src="abendveranstaltung/event.jpg">
+      </div>
+      <div id="tab2" style="display:none;">
+        <p>
+          <b>Wo:</b>   Messehalle 9<br/>
+          <b>Wann:</b> Einlass ab 18:00 Uhr<br/>
+          <b>Ende:</b> 01:00 Uhr<br/>
+        </p>
+        <h2>Moderation des Abends</h2>
+        <p>
+          Durch den Abend wird Sie die bekannte TV – Moderatorin Anna Kraft mit Charme und Witz führen. 
+          <img class="image" src="abendveranstaltung/moderator.jpg">
+        </p>
+        <p>
+          <b>Bitte beachten Sie:</b>
+          Bitte denken Sie daran, dass Sie für den Einlass in die Veranstaltungshalle Ihre Namenskarte benötigen und vorzeigen müssen.
+        </p>
+        <p>
+          Für die Abreise nach der Veranstaltung stehen stetig Taxen vor dem Messegelände zur Verfügung. Wir empfehlen jedoch eine eigene Planung der Abreise in die Hotels. 
+        </p>
+      </div>
+      <div id="tab3" style="display:none;">
+        <h2>Antipasti</h2>
+        <p>
+          Vielfältige Antipastivariationen mit goldprämierter Edelsalami und Schinkenspezialitäten<br />
+          Filet von der Putenbrust an raffinierter Orangenvinaigrette„Vitello Tonnato“<br />
+          Kalbfleisch an Thunfisch-Kapernsauce<br />
+          Kasseler Carpaccio mit leichter Himbeervinaigrette
+        </p>
+        <h2>Kalter Buffetteil</h2>
+        <p>
+Putenbrust mit Ananas, Papaya und einem Curry-Dip<br />
+Rosa gebratenes Black Angus Roastbeef mit Kräuterremoulade<br />
+Melonenschiffchen mit Lachsschinken<br />
+Rückenschnitzel mit Zitronen, BBQ-und Schalotten-Dip<br />
+Hacksteaks mit Sauergemüse und einem pikanten Salsa-Dip<br />
+Party-Mettwürstchen frisch aus dem Rauch mit Senf<br />
+Marinierte Mini-Geflügelspieße mit Curry-Dip<br />
+Rosmarinspieß mit Schweinefilet, Paprika, Kartoffeln und Knoblauch-Dip auf Chicorée gebettet<br />
+Kartoffelsalat „Pesto rosso“ mit Mini-Hacksteak im Glas<br />
+Parmesan-Oliven-Plätzchen mit Pesto Rosso und Ziegenkäse<br />
+Waldpilze mit Zwiebeln und Paprika auf Sauerteigbrot<br />
+Blätterteigtaschen mit blanchiertem Spinat und Käse gefüllt<br />
+Blätterteigtasche mit Tomaten und mediterranen Kräutern
+        </p>
+        <h2>Frisch aus dem Meer</h2>
+        <p>
+Schottischer Wildlachs im Ganzen auf Feldsalat<br />
+Graved-Lachs mit Kräutern gebeizt an Honig-Dill Senfsauce<br />
+Matjes auf Apfelringen
+        </p>
+        <h2>Salatvariationen</h2>
+        <p>
+Wildkräutersalat mit Granatapfelperlen und essbaren Blüten<br />
+Hirtensalat mit Strauchtomaten, Oliven und Schafskäse<br />
+Kartoffelsalat „Pesto rosso“ mit getrockneten Tomaten<br />
+Pastasalat „al dente“ mit buntem Ratatouille Gemüse<br />
+Rucolasalat mit Cocktailtomaten,Pinienkernen und Parmesan<br />
+Coleslaw (amerikanischer Weißkrautsalat) mit geraspelten Karotten und Sahne abgerundet
+        </p>
+        <h2>Frisch vom Spießgrill</h2>
+        <p>
+Goldbraunes Spanferkel, dazu würzige Altbiersauce<br />
+Königsputer an fruchtiger Johannisbeersauce
+        </p>
+        <h2>Weitere Hauptspeisen</h2>
+        <p>
+Saltimbocca vom Kalb, gefüllt mit Parmaschinken und Salbei in Pinot-Grigio-Sauce<br />
+Burgunder Schwertbraten mit einer Zwiebelsauce<br />
+Kürbisangelotti mit Parmesan und Kirschtomaten mit Trüffel Öl abgeschmeckt
+        </p>
+        <h2>Von der Grillplatte</h2>
+        <p>
+Schweinefiletmedaillons an verschiedenen Soßen<br />
+Lachssteaks an Honig -Senf -Dillsoße<br />
+Rinderhüftsteaks in pikanter Westernmarinade
+        </p>
+        <h2>Warme Beilagen</h2>
+        <p>
+Feine Bandnudeln in Butter geschwenkt<br />
+Kartoffelgratin, cremiges Gratin mit Sahne und herzhaftem Käse überbacken<br />
+Kartoffelstampf mit Butter und Sahne
+        </p>
+        <p>
+Blanchierte Prinzessbohnen herzhaft mit Speck gebratenFeiner grüner Blattspinat
+        </p>
+        <h2>Frisch aus der Riesenpfanne</h2>
+        <p>
+Aromatische Rosmarinkartoffeln in Olivenöl geschwenkt<br />
+Gemüsepfanne mit Zucchini, Paprika, Zwiebeln, Champignons und Karottenscheiben
+        </p>
+        <h2>Dessert</h2>
+        <p>
+Crème Brûlée von der Tonkabohne<br />
+Frisches exotisches Obstarrangement mit Vanillesauce<br />
+Panna cotta mit einem fruchtigen Himbeerpüree<br />
+Leichte Limetten-Joghurt-Mousse<br />
+Mousse au Chocolat aus geschmolzener Schokolade mit Sahne aufgeschlagen
+        </p>
+      </div>
+      <div id="tab4" style="display:none;">
+        <p>Seien Sie bei der unvergesslichen Flic Flac-Show dabei. Internationale Akrobatik und Artistik, gewürzt mit einem kräftigen Schuss Comedy werden Sie zum Staunen bringen.</p>
+        <img class="image" src="abendveranstaltung/show.jpg">
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        $("#tab1Button").click(function(){
+          $("#menubutton").trigger("click");
+          document.getElementById("nav_title").text = "Abendveranstaltung";
+          $("#tab1Button").removeClass("active");
+          $("#tab2Button").removeClass("active");
+          $("#tab3Button").removeClass("active");
+          $("#tab4Button").removeClass("active");
+          $(this).addClass("active");
+          $("#tab1").show();
+          $("#tab2").hide();
+          $("#tab3").hide();
+          $("#tab4").hide();
+        });
+        $("#tab2Button").click(function(){
+          $("#menubutton").trigger("click");
+          document.getElementById("nav_title").text = "Organisatorisches";
+          $("#tab1Button").removeClass("active");
+          $("#tab2Button").removeClass("active");
+          $("#tab3Button").removeClass("active");
+          $("#tab4Button").removeClass("active");
+          $(this).addClass("active");
+          $("#tab1").hide();
+          $("#tab2").show();
+          $("#tab4").hide();
+          $("#tab3").hide();
+        });
+        $("#tab3Button").click(function(){
+          $("#menubutton").trigger("click");
+          document.getElementById("nav_title").text = "Menü";
+          $("#tab1Button").removeClass("active");
+          $("#tab2Button").removeClass("active");
+          $("#tab3Button").removeClass("active");
+          $("#tab4Button").removeClass("active");
+          $(this).addClass("active");
+          $("#tab1").hide();
+          $("#tab2").hide();
+          $("#tab4").hide();
+          $("#tab3").show();
+        });
+        $("#tab4Button").click(function(){
+          $("#menubutton").trigger("click");
+          document.getElementById("nav_title").text = "Show-Programm";
+          $("#tab1Button").removeClass("active");
+          $("#tab2Button").removeClass("active");
+          $("#tab3Button").removeClass("active");
+          $("#tab4Button").removeClass("active");
+          $(this).addClass("active");
+          $("#tab1").hide();
+          $("#tab2").hide();
+          $("#tab3").hide();
+          $("#tab4").show();
+        });
+      })
+    </script>
   </body>
 </html>
