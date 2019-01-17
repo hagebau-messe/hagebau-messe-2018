@@ -85,6 +85,9 @@
           <li id="tab4Button" class="nav-item">
             <a class="nav-link" href="#">Show-Programm</a>
           </li>
+		  <li id="tab5Button" class="nav-item">
+            <a class="nav-link" href="#">After-Show-Party</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -92,25 +95,19 @@
     <div class="tabs-content">
       <div id="tab1" style="display:block;">
         <p>Als Highlight nach einem abwechslungsreichen und informativen ersten Messetag laden wir Sie ganz herzlich zu unserer großen Abendshow ein. </p>
-        <img class="image" src="abendveranstaltung/event.jpg">
       </div>
       <div id="tab2" style="display:none;">
         <p>
-          <b>Wo:</b>   Messehalle 9<br/>
+          <b>Wo:</b>   Halle 9<br/>
           <b>Wann:</b> Einlass ab 18:00 Uhr<br/>
           <b>Ende:</b> 01:00 Uhr<br/>
         </p>
-        <h2>Moderation des Abends</h2>
-        <p>
-          Durch den Abend wird Sie die bekannte TV – Moderatorin Anna Kraft mit Charme und Witz führen. 
-          <img class="image" src="abendveranstaltung/moderator.jpg">
-        </p>
         <p>
           <b>Bitte beachten Sie:</b>
-          Denken Sie daran, dass Sie für den Einlass in die Veranstaltungshalle Ihre Namenskarte benötigen und vorzeigen müssen.
+		  Für den Einlass in die Veranstaltungshalle benötigen Sie Ihre Namenskarte. Bitte zeigen Sie die Karte unaufgefordert dem Einlasspersonal vor.
         </p>
         <p>
-          Für die Abreise nach der Veranstaltung stehen stetig Taxen vor dem Messegelände zur Verfügung. Wir empfehlen jedoch eine eigene Planung der Abreise in die Hotels. 
+		Für die Abreise nach der Veranstaltung stehen stetig Taxen vor dem Messegelände zur Verfügung. Wir empfehlen jedoch eine eigene Planung der Abreise in die Hotels. 
         </p>
       </div>
       <div id="tab3" style="display:none;">
@@ -193,8 +190,14 @@ Mousse au Chocolat aus geschmolzener Schokolade mit Sahne aufgeschlagen
         </p>
       </div>
       <div id="tab4" style="display:none;">
-        <p>Seien Sie bei der unvergesslichen Flic Flac-Show dabei. Internationale Akrobatik und Artistik, gewürzt mit einem kräftigen Schuss Comedy werden Sie zum Staunen bringen.</p>
+	     <h2>Magie trifft Leidenschaft</h2>
+        <p>Als Highlight nach einem abwechslungsreichen und informativen ersten Messetag laden wir Sie ganz herzlich zu unserer großen Abendshow ein. Hans Klok - der schnellste Illusionist wird seine Gästen mit atemberaubenden Trick in seinen Bann ziehen.</p>
         <img class="image" src="abendveranstaltung/show.jpg">
+      </div>
+	   <div id="tab5" style="display:none;">
+	     <h2>After-Show-Party</h2>
+        <p>Nach den Illusionen holt die Partycrew alle Gäste auf den Boden der Tatsachen zurück und lädt zum Tanz ein.</p>
+        <img class="image" src="abendveranstaltung/aftershow.jpg">
       </div>
     </div>
 
@@ -207,11 +210,13 @@ Mousse au Chocolat aus geschmolzener Schokolade mit Sahne aufgeschlagen
           $("#tab2Button").removeClass("active");
           $("#tab3Button").removeClass("active");
           $("#tab4Button").removeClass("active");
+		  $("#tab5Button").removeClass("active");
           $(this).addClass("active");
           $("#tab1").show();
           $("#tab2").hide();
           $("#tab3").hide();
           $("#tab4").hide();
+		  $("#tab5").hide();
         });
         $("#tab2Button").click(function(){
           $("#menubutton").trigger("click");
@@ -220,10 +225,12 @@ Mousse au Chocolat aus geschmolzener Schokolade mit Sahne aufgeschlagen
           $("#tab2Button").removeClass("active");
           $("#tab3Button").removeClass("active");
           $("#tab4Button").removeClass("active");
+		  $("#tab5Button").removeClass("active");
           $(this).addClass("active");
           $("#tab1").hide();
           $("#tab2").show();
           $("#tab4").hide();
+		  $("#tab5").hide();
           $("#tab3").hide();
         });
         $("#tab3Button").click(function(){
@@ -233,10 +240,12 @@ Mousse au Chocolat aus geschmolzener Schokolade mit Sahne aufgeschlagen
           $("#tab2Button").removeClass("active");
           $("#tab3Button").removeClass("active");
           $("#tab4Button").removeClass("active");
+		  $("#tab5Button").removeClass("active");
           $(this).addClass("active");
           $("#tab1").hide();
           $("#tab2").hide();
           $("#tab4").hide();
+		  $("#tab5").hide();
           $("#tab3").show();
         });
         $("#tab4Button").click(function(){
@@ -246,11 +255,28 @@ Mousse au Chocolat aus geschmolzener Schokolade mit Sahne aufgeschlagen
           $("#tab2Button").removeClass("active");
           $("#tab3Button").removeClass("active");
           $("#tab4Button").removeClass("active");
+		  $("#tab5Button").removeClass("active");
           $(this).addClass("active");
           $("#tab1").hide();
           $("#tab2").hide();
           $("#tab3").hide();
+		  $("#tab5").hide();
           $("#tab4").show();
+        });
+		$("#tab5Button").click(function(){
+          $("#menubutton").trigger("click");
+          document.getElementById("nav_title").text = "After-Show-Party";
+          $("#tab1Button").removeClass("active");
+          $("#tab2Button").removeClass("active");
+          $("#tab3Button").removeClass("active");
+          $("#tab4Button").removeClass("active");
+		  $("#tab5Button").removeClass("active");
+          $(this).addClass("active");
+          $("#tab1").hide();
+          $("#tab2").hide();
+          $("#tab3").hide();
+          $("#tab4").hide();
+		  $("#tab5").show();
         });
       })
     </script>
