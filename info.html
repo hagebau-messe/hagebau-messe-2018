@@ -77,7 +77,7 @@
       <button id="menubutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div id="navbar_area" class="collapse show navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li id="tab1Button" class="nav-item active">
             <a class="nav-link" href="#">Anreise / Öffnungszeiten</a>
@@ -111,12 +111,12 @@
         </h2>
         <p>
           Halle 6<br />
-          06.02.2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09:00 - 18:00 Uhr<br />
-          07.02.2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09:00 - 17:00 Uhr<br />
+          06.02.2019&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09:00 - 18:00 Uhr<br />
+          07.02.2019&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09:00 - 17:00 Uhr<br />
         </p>
         <p>
           Halle 9<br />
-          07.02.2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Einlass ab 18:00 Uhr<br />
+          06.02.2019&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Einlass ab 18:00 Uhr<br />
         </p>
         <img class="image" src="info/map.jpg">
       </div>
@@ -235,6 +235,7 @@ Bitte schreiben Sie uns eine Email und nennen Sie uns Ihre Kontaktdaten. Im Nach
           $("#tab3").hide();
           $("#tab4").hide();
           $("#tab5").hide();
+		  $("navbar_area").addClass("show");
         });
         $("#tab2Button").click(function(){
           $("#menubutton").trigger("click");
@@ -250,6 +251,7 @@ Bitte schreiben Sie uns eine Email und nennen Sie uns Ihre Kontaktdaten. Im Nach
           $("#tab4").hide();
           $("#tab3").hide();
           $("#tab5").hide();
+		  $("navbar_area").addClass("show");
         });
         $("#tab3Button").click(function(){
           $("#menubutton").trigger("click");
@@ -265,6 +267,7 @@ Bitte schreiben Sie uns eine Email und nennen Sie uns Ihre Kontaktdaten. Im Nach
           $("#tab4").hide();
           $("#tab3").show();
           $("#tab5").hide();
+		  $("navbar_area").addClass("show");
         });
         $("#tab4Button").click(function(){
           $("#menubutton").trigger("click");
@@ -280,6 +283,7 @@ Bitte schreiben Sie uns eine Email und nennen Sie uns Ihre Kontaktdaten. Im Nach
           $("#tab3").hide();
           $("#tab4").show();
           $("#tab5").hide();
+		  $("navbar_area").addClass("show");
         });
         $("#tab5Button").click(function(){
           $("#menubutton").trigger("click");
@@ -295,6 +299,7 @@ Bitte schreiben Sie uns eine Email und nennen Sie uns Ihre Kontaktdaten. Im Nach
           $("#tab3").hide();
           $("#tab4").hide();
           $("#tab5").show();
+		  $("navbar_area").addClass("show");
         });
       })
     </script>
