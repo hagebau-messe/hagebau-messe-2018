@@ -67,7 +67,7 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a id="nav_title" class="navbar-brand" href="#">Abendveranstaltung</a>
+      <a id="nav_title" class="navbar-brand" href="#">Abenveranstaltung</a>
       <button id="menubutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -76,9 +76,11 @@
 		  <li id="tab2Button" class="nav-item active">
             <a class="nav-link" href="#">Organisatorisches</a>
           </li>
+		  <!--
           <li id="tab1Button" class="nav-item">
             <a class="nav-link" href="#">Abendveranstaltung</a>
           </li>
+		  -->
           <li id="tab3Button" class="nav-item">
             <a class="nav-link" href="#">Menü</a>
           </li>
@@ -107,10 +109,12 @@
 		Für die Abreise nach der Veranstaltung stehen stetig Taxen vor dem Messegelände zur Verfügung. Wir empfehlen jedoch eine eigene Planung der Abreise in die Hotels. 
         </p>
       </div>
+	  <!--
       <div id="tab1" style="display:none;">
         <p>Als Highlight nach einem abwechslungsreichen und informativen ersten Messetag laden wir Sie herzlich zu unserer Abendveranstaltung ein. </p>
 		<img class="image" src="abendveranstaltung/abendveranstaltung.png">
       </div>
+	  -->
       <div id="tab3" style="display:none;">
 	    <p>
           <img class="image" src="abendveranstaltung/gala.jpg">
@@ -119,16 +123,16 @@
           <img class="image" src="abendveranstaltung/menu1.png">
         </p>
         <p>
-          <img class="image" src="abendveranstaltung/menu2.png">
-        </p>
-        <p>
-          <img class="image" src="abendveranstaltung/menu3.png">
-        </p>
-        <p>
           <img class="image" src="abendveranstaltung/essen1.png">
         </p>
         <p>
+          <img class="image" src="abendveranstaltung/menu2.png">
+        </p>
+        <p>
           <img class="image" src="abendveranstaltung/essen2.png">
+        </p>
+        <p>
+          <img class="image" src="abendveranstaltung/menu3.png">
         </p>
         <p>
           <img class="image" src="abendveranstaltung/essen3.png">
@@ -150,7 +154,7 @@
       $(document).ready(function(){
         $("#tab1Button").click(function(){
           $("#menubutton").trigger("click");
-          document.getElementById("nav_title").text = "Abendveranstaltung";
+          //document.getElementById("nav_title").text = "Abendveranstaltung";
           $("#tab1Button").removeClass("active");
           $("#tab2Button").removeClass("active");
           $("#tab3Button").removeClass("active");
@@ -166,7 +170,7 @@
         });
         $("#tab2Button").click(function(){
           $("#menubutton").trigger("click");
-          document.getElementById("nav_title").text = "Organisatorisches";
+          //document.getElementById("nav_title").text = "Organisatorisches";
           $("#tab1Button").removeClass("active");
           $("#tab2Button").removeClass("active");
           $("#tab3Button").removeClass("active");
@@ -182,7 +186,7 @@
         });
         $("#tab3Button").click(function(){
           $("#menubutton").trigger("click");
-          document.getElementById("nav_title").text = "Menü";
+          //document.getElementById("nav_title").text = "Menü";
           $("#tab1Button").removeClass("active");
           $("#tab2Button").removeClass("active");
           $("#tab3Button").removeClass("active");
@@ -198,7 +202,7 @@
         });
         $("#tab4Button").click(function(){
           $("#menubutton").trigger("click");
-          document.getElementById("nav_title").text = "Show-Programm";
+          //document.getElementById("nav_title").text = "Show-Programm";
           $("#tab1Button").removeClass("active");
           $("#tab2Button").removeClass("active");
           $("#tab3Button").removeClass("active");
@@ -214,7 +218,7 @@
         });
 		$("#tab5Button").click(function(){
           $("#menubutton").trigger("click");
-          document.getElementById("nav_title").text = "After-Show-Party";
+          //document.getElementById("nav_title").text = "After-Show-Party";
           $("#tab1Button").removeClass("active");
           $("#tab2Button").removeClass("active");
           $("#tab3Button").removeClass("active");
